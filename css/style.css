@@ -266,6 +266,11 @@ footer {
     text-align: center;
 }
 
+.pie {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .navigation a {
     text-decoration: none;
     padding: 5px;
@@ -283,7 +288,15 @@ footer {
     background-color: rgb(248, 171, 83);
 }
 
+
+/* Una animación al pie de las páginas; cuando se pasa sobre el copyright */
 .pie {
-    margin-top: 20px;
-    text-align: center;
+    font-size: 100%;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.pie:hover {
+    font-size: 200%;
+    margin-bottom: 50px;
 }
