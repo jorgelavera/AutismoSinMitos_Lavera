@@ -57,8 +57,30 @@ body {
     margin: 5px 10px 30px 0px;
     font-size: 120%;
     font-weight: bold;
+    animation-name: mirame;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
 }
 
+@keyframes mirame {
+    0%{
+        color: black;
+    }
+    10%{
+        color: orange;
+    }
+    20%{
+        color: orangered;
+    }
+    35%{
+        color: orange;
+    }
+    
+    50%{
+        color: black;
+    }
+}
 /*------------------------ Menu ------------------------*/
 .grid-menu {
     margin-top: 30px;
@@ -66,9 +88,9 @@ body {
     justify-content: center;
 }
 
-/*Responsive menu: menor a 400px, sin CSS (es una pantalla no apta para CSS) */
-/*Responsive menu: Entre 400px y 600px, 2 columnas (celular viejo) */
-@media screen and (min-width:400px) {
+/*Responsive menu: menor a 200px, sin CSS (es una pantalla no apta para CSS) */
+/*Responsive menu: Entre 200px y 600px, 2 columnas (celular viejo) */
+@media screen and (min-width:200px) {
     .grid-navigation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
