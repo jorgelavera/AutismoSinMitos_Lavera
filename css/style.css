@@ -52,7 +52,7 @@ body {
     min-width: 200px;
 }
 
-/*  El slogan va a tener letra remarcada */
+/*  El slogan va a tener letra remarcada y con color animado*/
 .slogan {
     margin: 5px 10px 30px 0px;
     font-size: 120%;
@@ -71,7 +71,7 @@ body {
         color: orange;
     }
     20%{
-        color: orangered;
+        color: red;
     }
     35%{
         color: orange;
