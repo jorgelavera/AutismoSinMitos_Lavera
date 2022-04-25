@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(250, 247, 236); */
+    background-image: url("../img/wallpaper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*------------------------ Cabecera ------------------------*/
+/*  En la primera línea hay 4 elementos, 2 alineados a la izquierda y
+    el siguiente centrado y el último a la derecha. Por eso creo un flex dentro de otro. 
+    El primer bloque tiene 2 elementos, el ícono y "el resto", para que el segundo elemento
+    quede al lado del ícono agrego "nowrap", sino se va abajo. */
+.cabecera {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
+    background-color: white;
+}
+
+.icono-whatsapp {
+    margin-left: 10px;
+}
+
+/*  El segundo bloque tiene 3 elementos, repartidos igual. */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: inherit;
+}
+
+/*  El teléfono tienen un márgen adicional arriba para que quede "alineado" a la vista. */
+.our-phone {
+    margin-top: 5px;
+}
+
+.logo {
+    width: 20%;
+    min-width: 200px;
+}
+
+/*  El slogan va a tener letra remarcada y con color animado*/
+.slogan {
+    margin: 5px 10px 30px 0px;
+    font-size: 120%;
+    font-weight: bold;
+    animation-name: mirame;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes mirame {
+    0%{
+        color: black;
+    }
+    10%{
+        color: orange;
+    }
+    20%{
+        color: red;
+    }
+    35%{
+        color: orange;
+    }
+    
+    50%{
+        color: black;
+    }
+}
+/*------------------------ Menu ------------------------*/
+.menu-group {
+    margin-top: 30px;
+}
+
+    /*  CADA item del MENU */
+    .menu-a {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(255, 195, 127);
+        border: 1px solid rgb(255, 60, 0);
+        text-align: center;
+        font-size: large;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgb(105, 105, 105);
+        margin: 5px 15px 5px 15px;
+        width: 150px;
+    }
+
+    .menu-a:hover {
+        background-color: rgb(248, 171, 83);
+    }
+
+
+/* -------------------------- Principal -------------------------- */
+/* dos estilos de página según el contenido */
+.main_centered {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.main_filled {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* "focus" es una clase de bloque que llama la atención */
+    .focus {
+        /*    width: 100%;
+    align-self: center;*/
+        margin: 10px 10px 20px 10px;
+        padding: 10px 10px 10px 10px;
+        min-width: 300px;
+        max-width: 500px;
+        background-color: rgb(250, 229, 201);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(105, 105, 105);
+    }
+
+    .section-title {
+        font-size: 120%;
+        color: white;
+        background-color: rgb(255, 141, 34);
+        padding: 10px 10px 10px 10px;
+        /* display block causa que el título tenga el fondo de color a todo lo ancho, sino se achica */
+        display: block;
+    }
+
+    .item-title {
+        font-size: 110%;
+        margin-top: 15px;
+        display: inline-block
+    }
+
+    .grafico {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .info {
+        text-align: justify;
+        margin-top: 10px;
+    }
+/* Focus-full es similar a focus, pero puede haber varias columnas (focus, solo una) */
+    .focus-full {
+        margin: 10px 10px 20px 10px;
+        padding: 10px 10px 10px 10px;
+        min-width: 300px;
+        max-width: 500px;
+        background-color: rgb(250, 229, 201);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(105, 105, 105);
+    }
+
+
+/* ------------------------ Contact form ------------------------*/
+.contactForm {
+    display: flex;
+    flex-flow: column nowrap;
+    color: rgb(65, 65, 65);
+}
+
+.input-field {
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+}
+
+/* ------------------------ footer ------------------------*/
+.menu-pie {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pie {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    border-radius: 5x;
+    box-shadow: 5px 5px 10px rgb(105, 105, 105);
+    background-color: rgb(255, 195, 127);
+    border: 1px solid rgb(255, 60, 0);
+    text-align: center;
+    font-size: large;
+    margin: 5px 15px 5px 15px;
+    width: 150px;
+}
+.nav-item:hover {
+    background-color: rgb(248, 171, 83);
+}
+
+
+/* Una animación al pie de las páginas; cuando se pasa sobre el copyright */
+.pie {
+    font-size: 100%;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.pie:hover {
+    font-size: 200%;
+    margin-bottom: 50px;
+}

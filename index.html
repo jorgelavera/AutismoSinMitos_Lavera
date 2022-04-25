@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reduced.css">
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>Autismo sin Mitos</title>
 </head>
@@ -27,22 +28,21 @@
             </div>
         </div>
         <!------------------------ Menu ------------------------>
-        <div class="grid-menu">
-            <nav class="grid-navigation">
-                <a class="nav-1" href="index.html">Inicio</a>
-                <a class="nav-2" href="pages/mitos.html">Mitos</a>
-                <a class="nav-3" href="pages/articulos.html">Artículos</a>
-                <a class="nav-4" href="pages/diagnostico.html">Diagnóstico</a>
-                <a class="nav-5" href="pages/fechas.html">Fechas</a>
-                <a class="nav-6" href="pages/contacto.html">Contacto</a>
+        <div class="container-fluid">
+            <nav class="nav menu-group">
+                <a class="nav-item nav-link menu-a" href="index.html">Inicio</a>
+                <a class="nav-item nav-link menu-a" href="pages/mitos.html">Mitos</a>
+                <a class="nav-item nav-link menu-a" href="pages/articulos.html">Artículos</a>
+                <a class="nav-item nav-link menu-a" href="pages/diagnostico.html">Diagnóstico</a>
+                <a class="nav-item nav-link menu-a" href="pages/fechas.html">Fechas</a>
+                <a class="nav-item nav-link menu-a" href="pages/contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
-
     <!------------------------ Principal ------------------------>
-    <main class="main_centered">
-        <section class="focus">
+    <main class="main_centered container">
+        <section class="focus lead row">
             <strong class="section-title">
                 SOMOS AUTISTAS
             </strong>
@@ -66,7 +66,7 @@
                 trabajo.
             </p>
         </section>
-        <section class="focus">
+        <section class="focus lead row">
             <strong class="section-title">
                 ¿Qué es el autismo y cuáles son sus características?
             </strong>
@@ -76,7 +76,7 @@
                 de deficiencias persistentes en la comunicación y en la interacción social.
             </p>
         </section>
-        <section class="focus">
+        <section class="focus lead row">
             <strong class="section-title">
                 Más en detalle...
             </strong>
@@ -122,10 +122,10 @@
 
         <!-------------------------- footer -------------------------->
         <footer>
-            <div class="menu-pie">
-                <nav class="navigation">
-                    <a href="#">Inicio </a>
-                    <a href="https://www.facebook.com/AutismoSinMitos"><img src="img\facebook.png" width="20px" />
+            <div class="menu-pie container-fluid">
+                <nav class="navigation nav">
+                    <a class="nav-item nav-link" href="#">Inicio </a>
+                    <a class="nav-item nav-link" href="https://www.facebook.com/AutismoSinMitos"><img src="img\facebook.png" width="20px" />
                         Síganos en Facebook</a>
                 </nav>
             </div>
@@ -137,6 +137,9 @@
         </footer>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
