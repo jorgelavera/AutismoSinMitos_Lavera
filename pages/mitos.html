@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/reduced.css">
-    <link rel="icon" type="image/png" href="..\img\favicon.png" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <title>Autismo sin Mitos</title>
 </head>
 
@@ -26,31 +26,51 @@
                 <p class="slogan">Autismo por autistas</p>
             </div>
         </div>
-        <!------------------------ Menu ------------------------>
-        <div class="container-fluid">
-            <nav class="nav menu-group">
-                <a class="nav-item nav-link menu-a" href="../index.html">Inicio</a>
-                <a class="nav-item nav-link menu-a" href="mitos.html">Mitos</a>
-                <a class="nav-item nav-link menu-a" href="articulos.html">Artículos</a>
-                <a class="nav-item nav-link menu-a" href="diagnostico.html">Diagnóstico</a>
-                <a class="nav-item nav-link menu-a" href="fechas.html">Fechas</a>
-                <a class="nav-item nav-link menu-a" href="contacto.html">Contacto</a>
-            </nav>
-        </div>
+        <!------------------------ Bootstrap Menu ------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav menu-group">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mitos.html">Mitos<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagnostico.html">Diagnóstico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fechas.html">Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
 
     <!------------------------ Principal ------------------------>
-    <main class="main_filled container-fluid">
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: El autismo es una enfermedad y se cura
-                </strong>
-                <strong class="item-title">
+    <main class="main_filled container-fluid card-deck">
+
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: El autismo es una enfermedad y se cura
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     No, el autismo no es una enfermedad
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Es una condición o transtorno relacionado con el desarrollo del
                     sistema nervioso.
                     Se nace con él y no se puede contagiar ni contraer a lo largo de la vida. Aunque no se puede
@@ -64,17 +84,18 @@
                     integrado
                     por terapeutas, neurólogos, psiquiatras, etc.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: Su origen es exclusivamente genético
-                </strong>
-                <strong class="item-title">
+
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: Su origen es exclusivamente genético
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     No se conocen todos las posibles causas de autismo
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Aún no ha sido posible determinar un único origen del autismo: «Existen múltiples causas y en
                     muchos
                     casos no se asocian exclusivamente a un factor genético», aseguran los profesionales. Ciertos
@@ -86,17 +107,17 @@
                     Pero atención, que no se conozcan todas las posibles causas, no significa que no se conozcan las
                     cosas que no son causas.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: El autismo es provocado por un mal vínculo entre madre e hijo
-                </strong>
-                <strong class="item-title">
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: El autismo es provocado por un mal vínculo entre madre e hijo
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     Creencia nefasta si las hay
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Inventada por Kanner en base a creencias de Freud, y luego desmentida por el mismo Kanner. Los
                     padres no son los culpables del
                     trastorno de su hijo. Es importante que establezcan un buen
@@ -108,17 +129,17 @@
                     él,
                     educarlo, alimentarlo, etc.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: Las vacunas pueden causar autismo
-                </strong>
-                <strong class="item-title">
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: Las vacunas pueden causar autismo
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     NO: Las vacunas NO pueden causar autismo
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Esta afirmación es rotundamente falsa, a pesar de que existen grupos de opinión que insisten en
                     su
                     veracidad. Un nuevo estudio llevado a cabo en el Statens Serum Institut en Dinamarca con casi
@@ -132,17 +153,17 @@
                     retractó y perdió su licencia médica. Sin embargo, el bulo se mantiene y la comunidad científica
                     internacional se ve obligada a refutarlo continuamente.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: El autismo es infantil
-                </strong>
-                <strong class="item-title">
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: El autismo es infantil
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     NO: Los niños autistas se vuelven adultos autistas
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Crecen y se vuelven adolescentes autistas, y luego adultos autistas. La misma proporción de
                     autismo que existe en los niños (alrededor de 1%) existe en los adultos. Sucede que los
                     diagnósticos son modernos y muchos adultos recién se enteran que lo son (muchas veces por los
@@ -151,22 +172,23 @@
                     igual o peor a la de los autistas niños actuales, y, por supuesto, las características (que se
                     verifican con herramientas de diagnóstico como el test ADOS) permanecen toda la vida.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full lead row">
-            <section class="">
-                <strong class="section-title">
-                    MITO: Los autistas son angelitos
-                </strong>
-                <strong class="item-title">
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                MITO: Los autistas son angelitos
+            </h5>
+            <div class="card-body">
+                <h5 class="card-title">
                     Ni angelitos, ni niños índigo, ni azules
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Ni angelitos, ni niños índigo, ni niños cristal, ni puros, ni bendiciones, ni inocentes. Son
                     niños con problemas como todos, cada uno con sus virtudes y desafíos. Algunos son muy buenos y
                     otros no tanto. Algunos no mienten, y otros sí, y muy bien. Algunos se portan muy bien y otros
                     no tanto. Son personas de este mundo, como todos, y deben ser tratados como tales. </p>
-            </section>
+                </p>
+            </div>
         </div>
     </main>
 
@@ -174,7 +196,7 @@
     <!-------------------------- footer -------------------------->
     <footer>
         <div class="menu-pie container">
-            <nav class="navigation nav">
+            <nav class="navigation nav row justify-content-center">
                 <a class="nav-item nav-link" href="#">Inicio </a>
                 <a class="nav-item nav-link" href="https://www.facebook.com/AutismoSinMitos"><img
                         src="../img/facebook.png" width="20px" />
@@ -187,6 +209,7 @@
             </p>
         </div>
     </footer>
+    <script src="../js/bootstrap.js"></script>
 
 </body>
 
