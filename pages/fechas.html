@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css/style.css">
-    <link rel="icon" type="image/png" href="..\img\favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reduced.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <title>Autismo sin Mitos</title>
 </head>
 
@@ -25,53 +26,70 @@
                 <p class="slogan">Autismo por autistas</p>
             </div>
         </div>
-        <!------------------------ Menu ------------------------>
-        <div class="grid-menu">
-            <nav class="grid-navigation">
-                <a class="nav-1" href="..\index.html">Inicio</a>
-                <a class="nav-2" href="mitos.html">Mitos</a>
-                <a class="nav-3" href="articulos.html">Artículos</a>
-                <a class="nav-4" href="diagnostico.html">Diagnóstico</a>
-                <a class="nav-5" href="fechas.html">Fechas</a>
-                <a class="nav-6" href="contacto.html">Contacto</a>
-            </nav>
-        </div>
+        <!------------------------ Bootstrap Menu ------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav menu-group">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mitos.html">Mitos<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diagnostico.html">Diagnóstico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fechas.html">Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
 
     <!------------------------ Principal ------------------------>
-    <main class="main_filled">
-        <div class="focus-full">
-            <section>
-                <strong class="section-title">
-                    2 DE ABRIL
-                </strong>
-                <div class="grafico">
-                    <img src="../img/fechas-abril-2.jpg" width="380px" alt="Orgullo autista" width="20%">
-                </div>
-                <strong class="item-title">
+    <main class="main_filled container-fluid card-deck">
+
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                2 DE ABRIL
+            </h5>
+            <img src="../img/fechas-abril-2.jpg" class="card-img-top" width="380px" alt="Orgullo autista" width="20%">
+            <div class="card-body">
+                <h5 class="card-title">
                     ACEPTACIÓN del autismo
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Es momento de divulgar no sólo acerca de qué es el autismo, sino también dar un paso más, lograr que
                     las personas vean que los adultos autistas existimos, que NO es sólo un asunto infantil, y que las
                     dificultades no son por ser autista en sí, sino porque la sociedad no tiene en cuenta los modos
                     distintos de pensar y sentir de una persona autista.
                 </p>
-            </section>
+            </div>
         </div>
-        <div class="focus-full">
-            <section>
-                <strong class="section-title">
-                    18 DE JUNIO
-                </strong>
-                <div class="grafico">
-                    <img src="../img/fechas-junio-18.png" width="380px" alt="Orgullo autista" width="20%">
-                </div>
-                <strong class="item-title">
+
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                18 DE JUNIO
+            </h5>
+            <img src="../img/fechas-junio-18.png" class="card-img-top" width="380px" alt="Orgullo autista" width="20%">
+            <div class="card-body">
+                <h5 class="card-title">
                     Para sentirte orgulloso de tí mismo
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     El Día del Orgullo Autista, es un día que se celebra en todo el mundo el 18 de junio con el único
                     propósito de crear conciencia entre el público de que las personas autistas no son una versión rota
                     de sí mismas, sino que son individuos únicos. El evento anual fue celebrado por primera vez por
@@ -84,21 +102,22 @@
                     cura.
                     A pesar de los desafíos y/o dificultades que enfrentemos, el propósito del Día del Orgullo Autista
                     es mostrarle al mundo que estamos orgullosos de ser autistas, que no estamos enfermos ni
-                    defectuosos, que no necesitamos que nos normalicen. </p>
-            </section>
+                    defectuosos, que no necesitamos que nos normalicen.
+                </p>
+            </div>
         </div>
-        <div class="focus-full">
-            <section>
-                <strong class="section-title">
-                    10 DE SEPTIEMBRE
-                </strong>
-                <div class="grafico">
-                    <img src="../img/fechas-septiembre-10.jpg" width="380px" alt="Prevención del suicidio" width="20%">
-                </div>
-                <strong class="item-title">
+
+        <div class="card focus-full">
+            <h5 class="card-header section-title">
+                10 DE SEPTIEMBRE
+            </h5>
+            <img src="../img/fechas-septiembre-10.jpg" class="card-img-top" width="380px" alt="Orgullo autista"
+                width="20%">
+            <div class="card-body">
+                <h5 class="card-title">
                     Día mundial de prevención del suicidio
-                </strong>
-                <p class="info">
+                </h5>
+                <p class="card-text info">
                     Las personas autistas tienen un mayor riesgo de suicidio que las personas no autistas. Las cifras
                     muestran que entre el 11 y el 66% de los adultos autistas habían pensado en el suicidio durante su
                     vida, y hasta el 35% había planeado o intentado suicidarse (Hedley, D. y Uljarević, M. 2018).
@@ -119,27 +138,29 @@
                 <ul class="info">
                     Tu llamado es personal, confidencial y anónimo.
                 </ul>
-            </section>
+            </div>
         </div>
-
-
-        <!-------------------------- footer -------------------------->
-        <footer>
-            <div class="menu-pie">
-                <nav class="navigation">
-                    <a href="#">Inicio </a>
-                    <a class="facebook" href="https://www.facebook.com/AutismoSinMitos"><img src="..\img\facebook.png" width="20px" />
-                        Síganos en Facebook</a>
-                </nav>
-            </div>
-            <div class="pie">
-                <p>
-                    Copyright 2022 &copy Jorge Lavera (CC License)
-                </p>
-            </div>
-        </footer>
-
     </main>
+
+
+    <!-------------------------- footer -------------------------->
+    <footer>
+        <div class="menu-pie container">
+            <nav class="navigation nav row justify-content-center">
+                <a class="nav-item nav-link" href="#">Inicio </a>
+                <a class="nav-item nav-link" href="https://www.facebook.com/AutismoSinMitos"><img
+                        src="../img/facebook.png" width="20px" />
+                    Síganos en Facebook</a>
+            </nav>
+        </div>
+        <div class="pie">
+            <p>
+                Copyright 2022 &copy Jorge Lavera (CC License)
+            </p>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.js"></script>
+
 </body>
 
 </html>
