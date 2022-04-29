@@ -116,7 +116,10 @@ body {
     background-color: rgb(248, 171, 83);
     font-size: larger;
 }
-
+/* botón hamburguesa con margen para que no quede pegado al borde */
+.navbar-toggler{
+    margin-left: 20px;
+}
 
 /* -------------------------- Principal -------------------------- */
 /* dos estilos de página según el contenido */
