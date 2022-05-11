@@ -35,30 +35,15 @@ body {
   justify-content: space-evenly; }
 
 /*------------------------ Cabecera ------------------------*/
-/*  En la primera línea hay 4 elementos, 2 alineados a la izquierda y
-    el siguiente centrado y el último a la derecha. Por eso creo un flex dentro de otro. 
-    El primer bloque tiene 2 elementos, el ícono y "el resto", para que el segundo elemento
-    quede al lado del ícono agrego "nowrap", sino se va abajo. */
-.cabecera {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 15px;
-  /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
-  background-color: white; }
-
-.icono-whatsapp {
-  margin-left: 10px;
-  width: 32px;
-  height: 32px; }
-
 /*  El segundo bloque tiene 3 elementos, repartidos igual. */
 .header {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: inherit; }
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+  /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
+  background-color: white; }
 
 /*  El teléfono tienen un márgen adicional arriba para que quede "alineado" a la vista. */
 .our-phone {
