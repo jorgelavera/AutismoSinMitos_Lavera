@@ -2,10 +2,10 @@
 .contactForm {
     display: flex;
     flex-flow: column nowrap;
-    color: rgb(65, 65, 65);
+    color: $color-sombra;
 }
 
 .input-field {
     margin-bottom: 10px;
-    background-color: blanchedalmond;
+    background-color: $color-fondo-bloque;
 }

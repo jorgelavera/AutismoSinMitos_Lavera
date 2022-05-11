@@ -9,6 +9,13 @@
     padding: 0;
 }
 
+@import "variables/variables";
+@import "sass2/condicionales";
+@import "sass2/extend";
+@import "sass2/maps";
+@import "sass2/mixins";
+@import "sass2/operaciones";
+
 body {
     background-image: url("../img/wallpaper.jpg");
     /* alternativa: background-color: rgb(250, 247, 236); */
@@ -18,15 +25,10 @@ body {
     background-size: cover;
 }
 
-@import "variables/variables";
-@import "sass2/condicionales";
-@import "sass2/extend";
-@import "sass2/maps";
-@import "sass2/mixins";
-@import "sass2/operaciones";
 @import "partials/header";
 @import "partials/menu";
 @import "partials/section";
+@import "partials/form";
 @import "partials/footer";
 
 
