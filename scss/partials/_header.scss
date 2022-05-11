@@ -1,5 +1,5 @@
 /*------------------------ Cabecera ------------------------*/
-    /*  El segundo bloque tiene 3 elementos, repartidos igual. */
+    /*  El bloque tiene 3 elementos, repartidos igual. */
     .header {
         display: flex;
         flex-flow: row wrap;
@@ -10,7 +10,7 @@
         background-color: white;
     }
     
-    /*  El teléfono tienen un márgen adicional arriba para que quede "alineado" a la vista. */
+    /*  El teléfono tiene un márgen adicional arriba para que quede "alineado" a la vista. */
     .our-phone {
         margin-top: 5px;
     }
