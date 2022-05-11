@@ -1,0 +1,72 @@
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+/* usamos bootstrap */
+.card {
+    background-color: $color-fondo-bloque;
+}
+
+/* "bloque-base" es una clase de bloque que llama la atención */
+.bloque-base {
+    margin: 10px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
+    max-width: 500px;
+    background-color: $color-fondo-bloque;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px $color-sombra;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.bloque-dli {
+    @extend .bloque-base;
+    animation-name: desliza-desde-izquierda;
+}
+
+.bloque-dld {
+    @extend .bloque-base;
+    animation-name: desliza-desde-derecha;
+}
+
+.section-title {
+    font-size: 120%;
+    color: white;
+    background-color: $color-titulo-bloque;
+    padding: 10px 10px 10px 10px;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.info {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+@keyframes desliza-desde-izquierda {
+    0% {
+        transform: translateX(-$distancia) scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes desliza-desde-derecha {
+    0% {
+        transform: translateX($distancia) scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

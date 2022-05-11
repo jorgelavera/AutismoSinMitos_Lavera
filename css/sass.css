@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  font-family: 'Nunito', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../img/wallpaper.jpg");
+  /* alternativa: background-color: rgb(250, 247, 236); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Los encabezados tiene tipo de letra más grande pero no tanto como el default */
+/* Esta es la paleta de colores del sitio */
+/* Distancia desde el borde, para las animaciones de traslado */
+/* -------------------------- Principal -------------------------- */
+/* dos estilos de página según el contenido */
+.main_centered {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.main_filled {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+/*------------------------ Cabecera ------------------------*/
+/*  En la primera línea hay 4 elementos, 2 alineados a la izquierda y
+    el siguiente centrado y el último a la derecha. Por eso creo un flex dentro de otro. 
+    El primer bloque tiene 2 elementos, el ícono y "el resto", para que el segundo elemento
+    quede al lado del ícono agrego "nowrap", sino se va abajo. */
+.cabecera {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 15px;
+  /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
+  background-color: white; }
+
+.icono-whatsapp {
+  margin-left: 10px;
+  width: 32px;
+  height: 32px; }
+
+/*  El segundo bloque tiene 3 elementos, repartidos igual. */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: inherit; }
+
+/*  El teléfono tienen un márgen adicional arriba para que quede "alineado" a la vista. */
+.our-phone {
+  margin-top: 5px; }
+
+.logo {
+  width: 20%;
+  min-width: 200px; }
+
+/*  El slogan va a tener letra remarcada y con color animado*/
+.slogan {
+  margin: 5px 10px 30px 0px;
+  font-size: 120%;
+  font-weight: bold;
+  animation-name: mirame;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s; }
+
+@keyframes mirame {
+  0% {
+    color: black; }
+  10% {
+    color: orange; }
+  20% {
+    color: red; }
+  35% {
+    color: orange; }
+  50% {
+    color: black; } }
+
+/*------------------------ Menu ------------------------*/
+.menu-group {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center; }
+
+.navbar-toggler {
+  background-color: #ffc37f; }
+
+/*  CADA item del MENU (estilo botón) */
+.nav-item {
+  text-decoration: none;
+  color: black;
+  background-color: #ffc37f;
+  border: 1px solid #ff3c00;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px dimgray;
+  margin: 5px 15px 5px 15px;
+  width: 150px; }
+
+.nav-item:hover {
+  background-color: #f8ab53;
+  font-size: larger; }
+
+/* botón hamburguesa con margen para que no quede pegado al borde */
+.navbar-toggler {
+  margin-left: 20px; }
+
+h1 {
+  font-size: 120%; }
+
+h2 {
+  font-size: 110%; }
+
+/* usamos bootstrap */
+.card {
+  background-color: #fae5c9; }
+
+/* "bloque-base" es una clase de bloque que llama la atención */
+.bloque-base, .bloque-dli, .bloque-dld {
+  margin: 10px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 500px;
+  background-color: #fae5c9;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px dimgray;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  transition-timing-function: ease; }
+
+.bloque-dli {
+  animation-name: desliza-desde-izquierda; }
+
+.bloque-dld {
+  animation-name: desliza-desde-derecha; }
+
+.section-title {
+  font-size: 120%;
+  color: white;
+  background-color: #ff8d22;
+  padding: 10px 10px 10px 10px; }
+
+.card-title {
+  margin-top: 10px; }
+
+.info {
+  text-align: justify;
+  margin-top: 10px; }
+
+@keyframes desliza-desde-izquierda {
+  0% {
+    transform: translateX(-2000px) scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes desliza-desde-derecha {
+  0% {
+    transform: translateX(2000px) scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+/* ------------------------ footer ------------------------*/
+.menu-pie {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center; }
+
+.pie {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 100%;
+  margin-bottom: 20px;
+  /* Una animación al pie de las páginas; cuando se pasa sobre el copyright */
+  transition: all .5s; }
+
+.pie:hover {
+  font-size: 150%;
+  margin-bottom: 50px;
+  color: red; }

@@ -1,0 +1,18 @@
+@mixin main ($fflow) {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-flow: $fflow;
+}
+
+/* -------------------------- Principal -------------------------- */
+/* dos estilos de página según el contenido */
+.main_centered {
+    @include main(column nowrap);
+    align-items: center;
+}
+
+.main_filled {
+    @include main(row wrap);
+    justify-content: space-evenly;
+}

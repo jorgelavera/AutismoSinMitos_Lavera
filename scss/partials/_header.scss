@@ -1,0 +1,72 @@
+/*------------------------ Cabecera ------------------------*/
+/*  En la primera línea hay 4 elementos, 2 alineados a la izquierda y
+    el siguiente centrado y el último a la derecha. Por eso creo un flex dentro de otro. 
+    El primer bloque tiene 2 elementos, el ícono y "el resto", para que el segundo elemento
+    quede al lado del ícono agrego "nowrap", sino se va abajo. */
+    .cabecera {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 15px;
+        /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
+        background-color: white;
+    }
+    
+    .icono-whatsapp {
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    /*  El segundo bloque tiene 3 elementos, repartidos igual. */
+    .header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: inherit;
+    }
+    
+    /*  El teléfono tienen un márgen adicional arriba para que quede "alineado" a la vista. */
+    .our-phone {
+        margin-top: 5px;
+    }
+    
+    .logo {
+        width: 20%;
+        min-width: 200px;
+    }
+    
+    /*  El slogan va a tener letra remarcada y con color animado*/
+    .slogan {
+        margin: 5px 10px 30px 0px;
+        font-size: 120%;
+        font-weight: bold;
+        animation-name: mirame;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    
+    @keyframes mirame {
+        0% {
+            color: black;
+        }
+    
+        10% {
+            color: orange;
+        }
+    
+        20% {
+            color: red;
+        }
+    
+        35% {
+            color: orange;
+        }
+    
+        50% {
+            color: black;
+        }
+    }
+    

@@ -1,0 +1,21 @@
+/* ------------------------ footer ------------------------*/
+.menu-pie {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pie {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 20px;
+    /* Una animación al pie de las páginas; cuando se pasa sobre el copyright */
+    transition: all .5s;
+}
+
+.pie:hover {
+    font-size: 150%;
+    margin-bottom: 50px;
+    color: red;
+}

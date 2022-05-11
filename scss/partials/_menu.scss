@@ -1,0 +1,35 @@
+/*------------------------ Menu ------------------------*/
+.menu-group {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    background-color: $color-fondo;
+}
+
+/*  CADA item del MENU (estilo botón) */
+.nav-item {
+    text-decoration: none;
+    color: black;
+    background-color: $color-fondo;
+    border: 1px solid $color-borde-boton;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px $color-sombra;
+    margin: 5px 15px 5px 15px;
+    width: 150px;
+}
+
+.nav-item:hover {
+    background-color: $color-boton;
+    font-size: larger;
+}
+
+/* botón hamburguesa con margen para que no quede pegado al borde */
+.navbar-toggler {
+    margin-left: 20px;
+}
