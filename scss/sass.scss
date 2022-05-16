@@ -17,12 +17,7 @@
 @import "sass2/operaciones";
 
 body {
-    background-image: url("../img/wallpaper.jpg");
-    /* alternativa: background-color: rgb(250, 247, 236); */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: hsl(38, 100%, 96%);
 }
 
 @import "partials/header";
