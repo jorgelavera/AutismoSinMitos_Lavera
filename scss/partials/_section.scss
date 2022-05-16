@@ -11,6 +11,12 @@ h2 {
     background-color: $color-fondo-bloque;
 }
 
+.enlace{
+    color: $color-enlace;
+    text-decoration: none;
+    width: 100%;
+}
+
 /* "bloque-base" es una clase de bloque que llama la atención */
 .bloque-base {
     margin: 10px 10px 20px 10px;

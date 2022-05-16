@@ -3,6 +3,7 @@
     width: 100%;
     margin-top: 30px;
     justify-content: center;
+    align-content: start;
 }
 
 .navbar-toggler {
@@ -32,4 +33,41 @@
 /* botón hamburguesa con margen para que no quede pegado al borde */
 .navbar-toggler {
     margin-left: 20px;
+}
+
+@media screen and (min-width:380px) {
+    .menu-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "nav-1 nav-2"
+            "nav-3 nav-4"
+            "nav-5 nav-6"
+            ;
+        justify-content: start;
+        }
+}
+@media screen and (min-width:570px) {
+    .menu-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "nav-1 nav-2 nav-3"
+            "nav-4 nav-5 nav-6"
+        ;
+        justify-content: start;
+    }
+}
+@media screen and (min-width:1140px) {
+    .menu-group {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "nav-1 nav-2 nav-3 nav-4 nav-5 nav-6"
+        ;
+        justify-content: start;
+    }
 }

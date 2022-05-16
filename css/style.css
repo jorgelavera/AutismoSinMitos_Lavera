@@ -76,7 +76,8 @@ body {
 .menu-group {
   width: 100%;
   margin-top: 30px;
-  justify-content: center; }
+  justify-content: center;
+  align-content: start; }
 
 .navbar-toggler {
   background-color: #ffc37f; }
@@ -103,6 +104,30 @@ body {
 .navbar-toggler {
   margin-left: 20px; }
 
+@media screen and (min-width: 380px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "nav-1 nav-2" "nav-3 nav-4" "nav-5 nav-6";
+    justify-content: start; } }
+
+@media screen and (min-width: 570px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nav-1 nav-2 nav-3" "nav-4 nav-5 nav-6";
+    justify-content: start; } }
+
+@media screen and (min-width: 1140px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "nav-1 nav-2 nav-3 nav-4 nav-5 nav-6";
+    justify-content: start; } }
+
 h1 {
   font-size: 120%; }
 
@@ -112,6 +137,11 @@ h2 {
 /* usamos bootstrap */
 .card {
   background-color: #fae5c9; }
+
+.enlace {
+  color: #ff3c00;
+  text-decoration: none;
+  width: 100%; }
 
 /* "bloque-base" es una clase de bloque que llama la atención */
 .bloque-base, .bloque-dli, .bloque-dld {
