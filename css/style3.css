@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  font-family: 'Nunito', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* "bloque-base" es una clase de bloque que llama la atención */
+.bloque-base, .bloque-dli, .bloque-dld {
+  margin: 10px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 500px;
+  background-color: #fae5c9;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px dimgray;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  transition-timing-function: ease; }
+
+.bloque-dli {
+  animation-name: desliza-desde-izquierda; }
+
+.bloque-dld {
+  animation-name: desliza-desde-derecha; }
+
+@keyframes desliza-desde-izquierda {
+  0% {
+    transform: translateX(-2000px) scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes desliza-desde-derecha {
+  0% {
+    transform: translateX(2000px) scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+/* -------------------------- Principal -------------------------- */
+/* dos estilos de página según el contenido */
+.main_centered {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.main_filled {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+body {
+  background-color: #fff8eb; }
+
+/*------------------------ Cabecera ------------------------*/
+/*  El bloque tiene 3 elementos, repartidos igual. */
+.cabecera {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+  /* El fondo blanco es para que no queden los gráficos mal si hay un wallpaper*/
+  background-color: white; }
+
+/*  El teléfono tiene un márgen adicional arriba para que quede "alineado" a la vista. */
+.our-phone {
+  margin-top: 5px; }
+
+.logo {
+  width: 20%;
+  min-width: 200px; }
+
+/*  El slogan va a tener letra remarcada y con color animado*/
+.slogan {
+  margin: 5px 10px 30px 0px;
+  font-size: 120%;
+  font-weight: bold;
+  animation-name: mirame;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s; }
+
+@keyframes mirame {
+  0% {
+    color: black; }
+  10% {
+    color: orange; }
+  20% {
+    color: red; }
+  35% {
+    color: orange; }
+  50% {
+    color: black; } }
+
+/*------------------------ Menu ------------------------*/
+.menu-group {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+  align-content: start; }
+
+.navbar-toggler {
+  background-color: #ffc37f; }
+
+/*  CADA item del MENU (estilo botón) */
+.nav-item {
+  text-decoration: none;
+  color: black;
+  background-color: #ffc37f;
+  border: 1px solid #ff3c00;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px dimgray;
+  margin: 5px 15px 5px 15px;
+  width: 150px; }
+
+.nav-item:hover {
+  background-color: #f8ab53;
+  font-size: larger; }
+
+/* botón hamburguesa con margen para que no quede pegado al borde */
+.navbar-toggler {
+  margin-left: 20px; }
+
+@media screen and (min-width: 380px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "nav-1 nav-2" "nav-3 nav-4" "nav-5 nav-6";
+    justify-content: start; } }
+
+@media screen and (min-width: 570px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nav-1 nav-2 nav-3" "nav-4 nav-5 nav-6";
+    justify-content: start; } }
+
+@media screen and (min-width: 1140px) {
+  .menu-group {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "nav-1 nav-2 nav-3 nav-4 nav-5 nav-6";
+    justify-content: start; } }
+
+h1 {
+  font-size: 120%; }
+
+h2 {
+  font-size: 110%; }
+
+/* usamos bootstrap */
+.card {
+  background-color: #fae5c9; }
+
+.enlace {
+  color: #ff3c00;
+  text-decoration: none;
+  width: 100%; }
+
+.section-title {
+  font-size: 120%;
+  color: white;
+  background-color: #ff8d22;
+  padding: 10px 10px 10px 10px; }
+
+.card-title {
+  margin-top: 10px; }
+
+.info {
+  text-align: justify;
+  margin-top: 10px; }
+
+/* ------------------------ Contact form ------------------------*/
+.contactForm {
+  display: flex;
+  flex-flow: column nowrap;
+  color: dimgray; }
+
+.input-field {
+  margin-bottom: 10px;
+  background-color: #fae5c9; }
+
+/* ------------------------ footer ------------------------*/
+.menu-pie {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center; }
+
+.pie {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 100%;
+  margin-bottom: 20px;
+  /* Una animación al pie de las páginas; cuando se pasa sobre el copyright */
+  transition: all .5s; }
+
+.pie:hover {
+  font-size: 150%;
+  margin-bottom: 50px;
+  color: red; }
+
+.pie-nav {
+  width: 250px; }
